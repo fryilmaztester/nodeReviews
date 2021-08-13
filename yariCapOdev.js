@@ -1,5 +1,6 @@
 
 const piNumber = 3.14;
+const parameter = process.argv.slice(2);
 
 function calculateDiameter(diameter){
 
@@ -7,4 +8,6 @@ function calculateDiameter(diameter){
     console.log(`Yarıçapı ${diameter} olan dairenin alanı: ${alan}`);
 }
 
-calculateDiameter(3);
+//calculateDiameter(3);
+
+calculateDiameter(parameter[0]*1);
